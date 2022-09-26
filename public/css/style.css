@@ -1,0 +1,316 @@
+/*estilos genrales*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    
+}
+h3{
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+}
+
+/*header*/
+
+div.top-header{
+    padding: 5%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header img{
+    width: 100%;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+/*Ubucacción del logo*/
+header div.logo{
+    padding: 10px;
+}
+
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+    display: none;
+
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.fa-search{
+    background-color: white;
+    padding: 2px;
+    height: 20px;
+    border: 1px solid #000;
+
+}
+
+/*Formato de formulario de busqueda de producto*/
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    height: 20px;
+    width: 80%;
+    max-width: 500px;
+    flex: auto;
+}
+
+/*Formato de la lupa de busqueda*/
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+}
+
+/*main*/
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.precio{
+    font-size: 18px;
+    flex: 3;
+}
+
+.descuento{
+    flex: 7;
+}
+
+.descuento,
+.descripcion{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.descripcion{
+    color: #666;
+}
+
+.descripcion{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+.product_img{
+    width: 100%;
+}
+
+main section article i,
+.descuento{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+/*footer*/
+.footer{
+    background-color: white;
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+.secFooter{
+    padding: 2%;
+}
+.secFooter h4{
+    text-align: center;    
+}
+.secFooter p{
+    text-align: justify;
+}
+
+.fa-credit-card{
+    color: #1259c3;
+}
+
+.fa-gift{
+    color: #1259c3;
+}
+.fa-user-shield{
+    color: #1259c3;
+}
+
+@media (min-width: 426px){
+    
+
+    div.top-header{
+       
+        flex-direction: row;
+    }
+
+    header nav{ 
+        display: block;
+        flex-direction: column;
+    }
+
+    .burger-menu {
+    display: none;
+   }
+
+   header nav ul{
+        display: flex;
+   }
+   main section article .descripcion {
+       box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   }
+
+   main section div.productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main section div.productos article{
+        width: 45%;
+    }
+
+    header nav { 
+        display: block;
+        
+    }
+
+    .precio,
+    .discuento{
+        width: 50%;
+    }
+
+   .descripcion {
+    display: contents;
+    }
+    
+    .footer{
+        display:flex;
+    }
+    
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}

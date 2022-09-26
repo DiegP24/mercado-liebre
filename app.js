@@ -3,14 +3,12 @@ const path = require('path');
 
 const app = express();
 
-app.listen(process.env.PORT || 3000)
-
-
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 app.get('/', (req, res) => { 
+   //res.send("hola mundo");
    res.sendFile(path.resolve(__dirname, './src/views/home.html'));
    
 });
 
-app.listen(3000, () => console.log('Servidor corriendo en el puerto 3000'));
+app.listen(process.env.PORT || 3000, () => console.log('Servidor corriendo en el puerto 3000'));
